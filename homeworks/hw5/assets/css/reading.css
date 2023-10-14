@@ -6,8 +6,8 @@ body {
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 p:first-child {
@@ -24,7 +24,7 @@ p:nth-child(2) {
 
 .img-scaled-wh {
     width: 100%;
-    height: 100%;
+    height: 100%:
 }
 
 .clear {
@@ -36,15 +36,15 @@ p:nth-child(2) {
 }
 
 #data {
-	display: none;
+    display: none;
 }
 
 .tag {
-	color: #6392c0;
+    color: #6392c0;
 }
 
 .element {
-	color: #de6868;
+    color: #de6868;
 }
 
 #container {
@@ -136,10 +136,10 @@ p:nth-child(2) {
     line-height: 24px;
 }
 .body img {
-	width: 100%;
+    width: 100%;
 }
 .body a {
-	color: #78c272;
+    color: #78c272;
 }
 .body li {
     line-height: 24px;
