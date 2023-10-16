@@ -1,0 +1,447 @@
+
+html {
+    background-color: white;
+    font-family: 'Inknut Antiqua', serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+#header-caption-name {
+    display: flex;
+    font-size: 35px;
+    color: #d66767;
+    width: 100px;
+    right: 50px;
+    white-space: normal;
+    margin-top: -120px;
+    padding-top: 80px;
+    padding-right: 20px;    
+}
+
+.header-title {
+    display: flex;
+    font-size: 25px;
+    color: #d66767;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: -120px;
+    padding-top: 80px;
+    padding-right: 35px;
+  
+}
+
+#header-searchbar{
+    display:flex;
+    align-items: center;
+    font-size: 15px;
+    text-align: left;
+    border:#D9D9D9;
+    width: 850px;
+    height: 40px;
+    background: #D9D9D9;
+    border-radius: 300px;
+    display: inline-block;
+    color: #9c9393;
+    padding-top: 10px;
+    margin-right: 10px;
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+#header-searchbar:hover{
+    background: #D9D9D9;
+    opacity: 80%;
+}
+
+
+#order-now-button {
+    background: #d66767;
+    color: #FFFDFD;
+    font-family: 'Inconsolata', serif;
+    border-radius: 11px;
+    font-size: 25px;
+    text-align: center;
+    height: 40px;
+    width: 200px; 
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+#order-now-button:hover {
+    background: #d66767;
+    opacity: 80%;
+}
+
+#today {
+    display: flex;
+    flex-direction: row;
+    color: #9c9393;
+    opacity: 66%;
+    font-weight: bold;
+}
+
+#today:before, #today:after {
+    content:"";
+    flex: 0.5 0.5;
+    border-bottom: 3px solid;
+    margin: auto;
+    color:#d66767;
+    flex-grow: 1;
+}
+
+#menu1 {
+    background: #d66767;
+    color: #FFFDFD;
+    font-family: 'Inconsolata', serif;
+    border-radius: 11px;
+    font-size: 25px;
+    text-align: center;
+    height: 40px;
+    width: 70px; 
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+#menu1:hover {
+    opacity: 80%;
+}
+
+a {
+    background: #d66767;
+    color: #FFFDFD;
+    font-family: 'Inconsolata', serif;
+    border-radius: 11px;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+img.images {
+    width: 350px;
+    height: 330px;
+    border-radius: 11px;
+    padding-right: 50px;
+    border-radius: 11px;
+    padding-left: 50px;
+    cursor: pointer;
+    
+}
+
+img.images:hover {
+    opacity: 80%;
+}
+
+body {
+    margin: 0;
+    padding: 64px;
+  
+}
+
+#today {
+    font-size: 40px;
+    text-align: center;
+    color: #000000;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.ethiopia{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    color: #000000;
+    font-size: 45px;
+    font-weight: 700;
+    font-family: 'Inknut Antiqua', serif;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+#openinghours {
+    display: flex;
+    flex-direction: row;
+    color: #000000;
+    font-size: 45px;
+    font-weight: 700;
+    font-family: 'Inknut Antiqua', serif;
+    opacity: 80%;
+}
+
+.address {
+    display: flex;
+    flex-direction: row;
+    color: #000000;
+    font-size: 30px;
+    margin-top: -60px;
+    align-items: center;
+}
+
+#everyday {
+    display:flex;
+    flex-direction: row;
+}
+
+.second {
+    display: flex;
+    flex-direction: row;
+    color: #000000;
+    font-size: 30px;
+    align-items: center;
+    margin-top: -50px;
+}
+
+#time {
+    display:flex;
+    flex-direction: row;
+}
+
+#third {
+    font-size: 30px;
+    margin-top: -50px;
+}
+
+h2 {
+    margin-top:150px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    color: #000000;
+    font-size: 60px;
+    font-weight: 600;
+    opacity: 60%;
+}
+
+#menu:before, #menu:after {
+    content:"";
+    flex: 0.5 0.5;
+    border-bottom: 3px solid;
+    margin: auto;
+    color:#d66767;
+    flex-grow: 1;
+}
+
+/* section 1 of menu */
+
+.images1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.images1:hover {
+    opacity: 80%;
+}
+
+#img1 {
+    display:flex;
+    flex-direction: row;
+    margin-left: 50px;
+    width: 450px;
+    height: 450px;
+    
+
+}
+
+#img2{
+    display:flex;
+    flex-direction: row;
+    padding-left: 350px;
+    width: 450px;
+    height: 450px;
+}
+
+.populardishes {
+    display: flex;
+    flex-direction: row;
+    color: #000000;
+    font-size: 30px;
+    align-items: center;
+    margin-top: 30px;
+    font-weight: 200;
+}
+
+#ethiopian {
+    display:flex;
+    flex-direction: row;
+}
+
+.vegetarian {
+    display: flex;
+    flex-direction: row;
+    color: #000000;
+    font-size: 30px;
+    align-items: center;
+    font-weight: 50;
+    opacity: 70%;
+    margin-top: -30px;
+}
+
+#ethiopian1 {
+    display:flex;
+    flex-direction: row;
+    
+}
+
+/* section 2 of menu */
+
+.images2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.images2:hover {
+    opacity: 80%;
+}
+
+#img3 {
+    display:flex;
+    flex-direction: row;
+    margin-left: 50px;
+    width: 450px;
+    height: 450px;
+
+}
+
+#img4{
+    display:flex;
+    flex-direction: row;
+    padding-left: 350px;
+    width: 450px;
+    height: 450px;
+}
+
+.vegetarian1 {
+    display: flex;
+    flex-direction: row;
+    color: #000000;
+    font-size: 30px;
+    align-items: center;
+    margin-top: 30px;
+    font-weight: 200;
+}
+
+#poultry {
+    display:flex;
+    flex-direction: row;
+}
+
+.wide {
+    display: flex;
+    flex-direction: row;
+    color: #000000;
+    font-size: 30px;
+    align-items: center;
+    font-weight: 50;
+    opacity: 70%;
+    margin-top: -30px;
+}
+
+#poultry1 {
+    display:flex;
+    flex-direction: row;
+    
+}
+
+/* section 3 of menu */
+
+.images3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.images3:hover {
+    opacity: 80%;
+}
+
+#img5 {
+    display:flex;
+    flex-direction: row;
+    margin-left: 50px;
+    width: 450px;
+    height: 450px;
+
+}
+
+#img6{
+    display:flex;
+    flex-direction: row;
+    padding-left: 350px;
+    width: 450px;
+    height: 450px;
+}
+
+.beef {
+    display: flex;
+    flex-direction: row;
+    color: #000000;
+    font-size: 30px;
+    align-items: center;
+    margin-top: 30px;
+    font-weight: 200;
+}
+
+#lamb {
+    display:flex;
+    flex-direction: row;
+}
+
+.large {
+    display: flex;
+    flex-direction: row;
+    color: #000000;
+    font-size: 30px;
+    align-items: center;
+    font-weight: 50;
+    opacity: 70%;
+    margin-top: -30px;
+}
+
+#lamb1 {
+    display:flex;
+    flex-direction: row;
+    
+}
+
+/* end of section 3 menu */
+
+hr {
+    border-bottom: 5px solid #d66767;
+}
+
+#copyright {
+    text-align: center;
+}
+
+
+
+
+
+
+
+img {
+    max-width: 100%;
+}
+
+video {
+    max-width: 100%;
+}
+
+
+
+
