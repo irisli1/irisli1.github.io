@@ -16,7 +16,7 @@ html {
     padding-top: 70px;
 }
 
-.waving:hover {
+.waving {
     cursor: pointer;
     animation-name: wave;
     animation-duration: 2.0s;
