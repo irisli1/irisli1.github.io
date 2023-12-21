@@ -1,0 +1,312 @@
+html {
+    background-color: rgb(225, 252, 238);
+    padding-left: 30px;
+    scroll-behavior: smooth;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    color: rgb(47, 51, 49);
+    block-size: auto;
+    font-family: 'Just Me Again Down Here', serif;
+    font-size: 125px;
+    padding-left: 130px;
+    padding-top: 70px;
+}
+
+.waving {
+    cursor: pointer;
+    animation-name: wave;
+    animation-duration: 2.0s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave {
+    0% {
+        transform:rotate(0.0deg);
+    }
+
+    10% {
+        transform: rotate(14.0deg);
+    }
+
+    20% {
+        transform: rotate(-8.0deg);
+    }
+
+    30% {
+        transform: rotate(14.0deg);
+    }
+
+    40% {
+        transform: rotate(-4.0deg);
+    }
+
+    50% {
+        transform: rotate(10.0deg);
+    }
+
+    60% {
+        transform: rotate(0.0deg);
+    }
+
+    100% {
+        transform:rotate(0.0deg);
+    } 
+}
+
+.navigationbuttons {
+    font-family: 'IM FELL French Canon SC', serif;
+    font-size: 23px;
+    padding-top: 40px;
+    margin-top: -1px;
+    color: rgb(44, 142, 95);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    letter-spacing: 2px;
+}
+
+:hover.navigationbuttons {
+    cursor: pointer;
+}
+
+#navigation1 {
+    display: inline-block;
+    position: relative;
+}
+
+#navigation1:after {
+content: '';
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+height: 3px;
+bottom: -5px;
+left: 0;
+background-color: rgb(243, 202, 202);
+transform-origin: center;
+transition: transform 0.25s ease-out;
+}
+
+#navigation1:hover::after {
+transform: scaleX(1);
+transform-origin: center;
+}
+
+#navigation2 {
+    display: inline-block;
+    position: relative;
+}
+
+#navigation2:after {
+content: '';
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+height: 3px;
+bottom: -5px;
+left: 0;
+background-color: rgb(243, 202, 202);
+transform-origin: center;
+transition: transform 0.25s ease-out;
+}
+
+#navigation2:hover::after {
+transform: scaleX(1);
+transform-origin: center;
+}
+
+#navigation3 {
+    display: inline-block;
+    position: relative;
+}
+
+#navigation3:after {
+content: '';
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+height: 3px;
+bottom: -5px;
+left: 0;
+background-color: rgb(243, 202, 202);
+transform-origin: center;
+transition: transform 0.25s ease-out;
+}
+
+#navigation3:hover::after {
+transform: scaleX(1);
+transform-origin: center;
+}
+
+#navigation5 {
+    display: inline-block;
+    position: relative;
+}
+
+#navigation5:after {
+content: '';
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+height: 3px;
+bottom: -5px;
+left: 0;
+background-color: rgb(243, 202, 202);
+transform-origin: center;
+transition: transform 0.25s ease-out;
+}
+
+#navigation5:hover::after {
+transform: scaleX(1);
+transform-origin: center;
+}
+
+#navigation4 {
+    display: inline-block;
+    position: relative;
+}
+
+#navigation4:after {
+content: '';
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+height: 3px;
+bottom: -5px;
+left: 0;
+background-color: rgb(243, 202, 202);
+transform-origin: center;
+transition: transform 0.25s ease-out;
+}
+
+#navigation4:hover::after {
+transform: scaleX(1);
+transform-origin: center;
+}
+
+a {
+    color:  rgb(44, 142, 95);
+    text-decoration: none;
+}
+
+.subtitles {
+    font-family: 'Lato', serif;
+    letter-spacing: 3px;
+    padding-left: 130px;
+    padding-top: 50px;
+    font-size: 70px;
+    font-weight: 500;
+    color: gray;
+}
+
+#subsub1 {
+    color: rgb(47, 51, 49);
+    font-size: 45px;
+    opacity: 0.75;
+    padding-left: 100px;
+    font-family: 'Lato', serif;
+}
+
+#subsub2 {
+    color: rgb(47, 51, 49);
+    font-size: 45px;
+    opacity: 0.75;
+    padding-left: 100px;
+    font-family: 'Lato', serif;
+    padding-bottom: 100px;
+}
+
+#subtitle1 {
+    color: rgb(44, 142, 95);
+    font-family: 'IM FELL French Canon SC', serif;
+}
+
+#subtitle2 {
+    font-family: 'IM FELL French Canon SC', serif;
+    padding-bottom: -50px;
+    color: rgb(44, 142, 95);
+}
+
+.experiences {
+    color: rgb(47, 51, 49);
+    opacity: 0.75;
+    font-family: 'Lato', serif;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-right: 50px;
+}
+
+#d1 {
+    color: rgb(47, 51, 49);
+    opacity: 0.75;
+    font-family: 'Lato', serif;
+    font-size: 30px;
+    padding-left: 440px;
+}
+
+.experiences2 {
+    color: rgb(47, 51, 49);
+    opacity: 0.75;
+    font-family: 'Lato', serif;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-right: 205px;
+}
+
+#d2 {
+    color: rgb(47, 51, 49);
+    opacity: 0.75;
+    font-family: 'Lato', serif;
+    font-size: 30px;
+    padding-left: 440px;
+    padding-bottom: 100px;
+}
+
+#subtitle3 {
+    font-family: 'IM FELL French Canon SC', serif;
+    color: rgb(44, 142, 95);
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-right: 300px;
+    font-size: 25px;
+    font-family: 'Lato', serif;
+    letter-spacing: 1px;
+    padding-bottom: 150px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+
+
+#email { 
+    color: gray;
+}
+
+#linkedin {
+    color: gray;
+}
+
+#github {
+    color: gray;
+}
+
+hr {
+    color: white;
+    border-top: 1px dotted white;
+}
