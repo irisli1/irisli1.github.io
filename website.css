@@ -249,10 +249,7 @@ a {
     opacity: 0.75;
     font-family: 'Lato', serif;
     font-size: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-right: 205px;
+    padding-left: 430px;
 }
 
 #d2 {
@@ -260,10 +257,7 @@ a {
     opacity: 0.75;
     font-family: 'Lato', serif;
     font-size: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-right: 205px;
+    padding-left: 430px;
 }
 
 #d3 {
