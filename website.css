@@ -260,15 +260,6 @@ a {
     padding-left: 390px;
 }
 
-/*#d2 {
-    color: rgb(47, 51, 49);
-    opacity: 0.75;
-    font-family: 'Lato', serif;
-    font-size: 30px;
-    padding-left: 440px;
-    padding-bottom: 100px;
-}*/
-
 #d3 {
     color: rgb(47, 51, 49);
     opacity: 0.75;
@@ -278,6 +269,17 @@ a {
 }
 
 .experiences2 {
+    color: rgb(47, 51, 49);
+    opacity: 0.75;
+    font-family: 'Lato', serif;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-right: 205px;
+}
+
+#title2 {
     color: rgb(47, 51, 49);
     opacity: 0.75;
     font-family: 'Lato', serif;
