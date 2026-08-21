@@ -193,18 +193,22 @@ a {
     margin-bottom: 0.5rem;
 }
 
+#subtitle2 {
+    font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+}
+
 .experience-entry {
     color: var(--ink);
     opacity: 0.75;
     font-family: 'Lato', serif;
-    font-size: clamp(1rem, 2vw, 1.4rem);
+    font-size: clamp(0.9rem, 1.6vw, 1.15rem);
     border-left: 3px solid rgba(44, 142, 95, 0.35);
-    padding: 0 0 1.5rem 1.5rem;
-    margin-bottom: 1.5rem;
+    padding: 0 0 1rem 1.25rem;
+    margin-bottom: 1rem;
 }
 
 #subtitle2 + .experience-entry {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .experience-heading h3,
@@ -247,7 +251,7 @@ details.experience-entry[open] > .experience-heading {
 
 .experience-heading h3 {
     color: var(--ink);
-    font-size: 1.25em;
+    font-size: 1.15em;
     line-height: 1.25;
     display: flex;
     justify-content: space-between;
@@ -267,7 +271,7 @@ details.experience-entry[open] > .experience-heading {
 
 .experience-heading p {
     color: var(--green);
-    font-size: 0.85em;
+    font-size: 0.8em;
     line-height: 1.4;
     margin-top: 0.35rem;
     overflow-wrap: anywhere;
