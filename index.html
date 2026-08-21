@@ -2,26 +2,15 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-51GS1GBMN8"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-51GS1GBMN8');
-    </script>
-        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Iris Li</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Just Me Again Down Here">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IM FELL French Canon SC">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Imprima">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
-    <link rel="stylesheet" type = "text/css" href="website.js">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=Imprima&family=Just+Me+Again+Down+Here&family=Lato&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="website.css">
 </head>
 <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
     <div class="navigationbuttons">
         <div id="navigation1">
             home
@@ -37,7 +26,7 @@
             <a href="#subtitle3"> contact me</a>
         </div>
         <div id="navigation5">
-            <a href="https://www.canva.com/design/DAGi_Lb5Nas/bzWFu1kRtDEh8Zj9Y7Y5Jw/edit?utm_content=DAGi_Lb5Nas&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">resume</a> <i style="font-size:17px" class="fa">&#8599;</i>
+            <a href="https://www.canva.com/design/DAGi_Lb5Nas/bzWFu1kRtDEh8Zj9Y7Y5Jw/edit" target="_blank">resume</a> <i style="font-size:17px" class="fa">&#8599;</i>
         </div>
     </div>
 
@@ -53,13 +42,13 @@
 
     <div class="subtitles">
         <p id="subtitle1">
-            about me 
+            about me
         </p>
         <p id="subsub1">
             studying <strong>electrical engineering and <br> computer science</strong> @ uc berkeley.
         </p>
         <p id="subsub2">
-            bay area native, cs scholar, <br> <strong>society of women engineers</strong>, core consulting group 
+            bay area native, cs scholar, <br> <strong>society of women engineers</strong>, core consulting group
         </p>
 
 
@@ -67,25 +56,63 @@
             experiences
         </p>
 
-        <div class="experiences">
-            <p id="time1"> June 2024</p>
+        <details class="experience-entry">
+            <summary class="experience-heading">
+                <h3>Software Engineer Intern <span class="experience-date">Jun – Aug 2026</span></h3>
+                <p>BlackRock | Aladdin Product Engineering - Collateral Management Team</p>
+            </summary>
+            <ul class="experience-highlights">
+                <li>Engineered a MCP tool from the ground up to power a margin explainability agent used by 1000+ users</li>
+                <li>Architected a new API from proto definition to backend implementation, supporting 80K+ calls</li>
+                <li>Migrated backend infrastructure into an agent orchestration layer for multi-tool execution</li>
+                <li>Partnered with APM to define agent tool-selection paths for edge cases</li>
+            </ul>
+        </details>
 
-            <p id="title1">
-                <strong>IBM Accelerate Program</strong> - Design Track 
-            </p>
-        </div>
+        <details class="experience-entry">
+            <summary class="experience-heading">
+                <h3>Research Assistant <span class="experience-date">Feb – May 2026</span></h3>
+                <p>Space Sciences Laboratory</p>
+            </summary>
+            <ul class="experience-highlights">
+                <li>Processed MAVEN atmospheric density telemetry in IDL, cleaning datasets from NASA's Mars mission</li>
+                <li>Identified tangential altitude and count rate measurements across orbital passes to characterize density profiles</li>
+            </ul>
+        </details>
 
-        <p id="d1"> Applied UX design skills and UX research methods to sample design briefs using Mural. Engaged in weekly discussions and collaborated with groups members to develop journey mapping skills. </p>
+        <details class="experience-entry">
+            <summary class="experience-heading">
+                <h3>Software Engineer Intern <span class="experience-date">Jun – Aug 2025</span></h3>
+                <p>BlackRock | Aladdin Product Engineering - Alpha Generation Team</p>
+            </summary>
+            <ul class="experience-highlights">
+                <li>Built a RAG-powered synthetic data generator with LangChain and PDFMiner</li>
+                <li>Optimized prompt engineering and grounding strategies against ground-truth answers</li>
+                <li>Built a Streamlit app with 7 configurable profiles for document uploads, exports, and evaluation</li>
+            </ul>
+        </details>
 
-        <div class="experiences2">
-            <p id="time2"> June 2024</p>
+        <details class="experience-entry">
+            <summary class="experience-heading">
+                <h3>Project Manager (Contract) <span class="experience-date">Feb – May 2025</span></h3>
+                <p>Alaska Airlines</p>
+            </summary>
+            <ul class="experience-highlights">
+                <li>Analyzed maintenance control software for ~330 aircraft to identify and improve efficiency gaps</li>
+                <li>Led 20+ interviews and 500+ contact outreach to evaluate satcom + ACARS system inefficiencies</li>
+            </ul>
+        </details>
 
-            <p id="title2">
-                <strong> Research Intern </strong> @ Zhejiang University 
-            </p>
-        </div>
-
-        <p id="d2"> Conducted research on the various interpretations of emotions in heterogenous and homogenous cultural groups. </p>
+        <details class="experience-entry">
+            <summary class="experience-heading">
+                <h3>Research Assistant <span class="experience-date">Oct 2023 – May 2024</span></h3>
+                <p>UC Berkeley Institute for Research on Labor &amp; Employment</p>
+            </summary>
+            <ul class="experience-highlights">
+                <li>Synthesized insights from 25+ publications on human-AI interaction across text, speech, and video modalities</li>
+                <li>Curated 10+ experimental videos using AI platforms to showcase intuitive human-AI collaboration</li>
+            </ul>
+        </details>
 
 
         <p id="subtitle3">
@@ -93,24 +120,28 @@
         </p>
 
         <div class="contact">
-            <i class="fa fa-envelope" id="envelope"style="font-size:70px;" ></i> 
-            <a id="email" href = "mailto: irisli1@berkeley.edu"> email </a>
-            <i class="fa fa-linkedin-square" style="font-size:70px"></i> 
-            <a id="linkedin" href="https://www.linkedin.com/in/iris-li1/" target="_blank"> linkedin </a>
-            <i class="fa fa-github" style="font-size:70px"></i> 
-            <a id="github" href="https://github.com/irisli1" target="_blank"> github </a>
+            <div class="contact-item">
+                <i class="fa fa-envelope" id="envelope"></i>
+                <a id="email" href="mailto:irisli1@berkeley.edu">email</a>
+            </div>
+            <div class="contact-item">
+                <i class="fa fa-linkedin-square"></i>
+                <a id="linkedin" href="https://www.linkedin.com/in/iris-li2023/" target="_blank">linkedin</a>
+            </div>
+            <div class="contact-item">
+                <i class="fa fa-github"></i>
+                <a id="github" href="https://github.com/irisli1" target="_blank">github</a>
+            </div>
 
         </div>
+
+    <button class="back-to-top" type="button" aria-label="Back to top" title="Back to top">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
     </div>
 
 
-
-
-
-</body>
-</html>
-
-  
+    <script src="website.js"></script>
 
 
 
