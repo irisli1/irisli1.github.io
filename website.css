@@ -178,12 +178,12 @@ a {
     padding-bottom: 4rem;
 }
 
-#subtitle1 {
+#aboutus {
     color: var(--green);
     font-family: 'IM FELL French Canon SC', serif;
 }
 
-#subtitle1,
+#aboutus,
 #subtitle2 {
     font-family: 'IM FELL French Canon SC', serif;
     color: var(--green);
