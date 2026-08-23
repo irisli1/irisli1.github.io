@@ -29,7 +29,7 @@ const sectionObserver = new IntersectionObserver(setActiveNavigation, {
     rootMargin: '-35% 0px -55%'
 });
 
-['aboutme', 'subtitle2', 'subtitle3'].forEach((id) => {
+['aboutme', 'experiences', 'contactme'].forEach((id) => {
     const section = document.getElementById(id);
     if (section) {
         sectionObserver.observe(section);
