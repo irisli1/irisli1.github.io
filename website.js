@@ -11,7 +11,9 @@ function updateScrollState() {
 
 function setActiveNavigation(entries) {
     entries.forEach((entry) => {
-        const navigationLink = document.querySelector(`a[href="#${entry.target.id}"]`);
+        const navigationLink = document.querySelector(
+            `.navigationbuttons a[href$="/${entry.target.id}"]`
+        );
         if (navigationLink) {
             navigationLink.parentElement.classList.toggle('active', entry.isIntersecting);
         }
