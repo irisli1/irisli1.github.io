@@ -6,6 +6,22 @@ const routeBySectionId = {
     subtitle2: 'experiences',
     subtitle3: 'contact'
 };
+const sectionIdByRoute = Object.fromEntries(
+    Object.entries(routeBySectionId).map(([sectionId, route]) => [route, sectionId])
+);
+
+function navigateToSection(route, updateUrl = true) {
+    const sectionId = sectionIdByRoute[route];
+    const section = sectionId ? document.getElementById(sectionId) : null;
+
+    if (!section) return;
+
+    if (updateUrl) {
+        window.history.pushState({}, '', `/${route}`);
+    }
+
+    section.scrollIntoView({ behavior: 'smooth' });
+}
 
 function updateScrollState() {
     const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -27,6 +43,28 @@ function setActiveNavigation(entries) {
 
 window.addEventListener('scroll', updateScrollState, { passive: true });
 updateScrollState();
+
+document.querySelectorAll('.navigationbuttons a[href^="https://irisli1.github.io/"]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+        const route = link.pathname.replace(/^\//, '');
+        if (sectionIdByRoute[route]) {
+            event.preventDefault();
+            navigateToSection(route);
+        }
+    });
+});
+
+const initialRoute = window.location.pathname.replace(/^\//, '');
+if (sectionIdByRoute[initialRoute]) {
+    navigateToSection(initialRoute, false);
+}
+
+window.addEventListener('popstate', () => {
+    const route = window.location.pathname.replace(/^\//, '');
+    if (sectionIdByRoute[route]) {
+        navigateToSection(route, false);
+    }
+});
 
 if (backToTop) {
     backToTop.addEventListener('click', () => {
