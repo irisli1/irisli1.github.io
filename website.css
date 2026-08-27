@@ -178,23 +178,17 @@ a {
     padding-bottom: 4rem;
 }
 
-#aboutme {
-    color: var(--green);
-    font-family: 'IM FELL French Canon SC', serif;
-}
-
+#aboutus,
 #aboutme,
-#experiences {
+#subtitle2,
+#subtitle3 {
     font-family: 'IM FELL French Canon SC', serif;
+    font-size: clamp(2.8rem, 6vw, 4.4rem);
     color: var(--green);
     display: block;
     border-bottom: 1px solid rgba(44, 142, 95, 0.35);
     padding-bottom: 0.25rem;
     margin-bottom: 0.5rem;
-}
-
-#experiences {
-    font-size: clamp(2.2rem, 4.5vw, 3.4rem);
 }
 
 .experience-entry {
@@ -207,7 +201,7 @@ a {
     margin-bottom: 1rem;
 }
 
-#experiences + .experience-entry {
+#subtitle2 + .experience-entry {
     margin-top: 1rem;
 }
 
@@ -300,7 +294,7 @@ details.experience-entry[open] > .experience-heading {
     box-sizing: border-box;
 }
 
-#contactme {
+#subtitle3 {
     font-family: 'IM FELL French Canon SC', serif;
     color: var(--green);
     margin-top: 80px;

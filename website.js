@@ -1,6 +1,11 @@
 const progress = document.querySelector('.scroll-progress');
 const backToTop = document.querySelector('.back-to-top');
-const sectionIds = ['aboutme', 'experiences', 'contactme'];
+const sectionIds = ['aboutme', 'subtitle2', 'subtitle3'];
+const routeBySectionId = {
+    aboutme: 'aboutme',
+    subtitle2: 'experiences',
+    subtitle3: 'contact'
+};
 
 function updateScrollState() {
     const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -12,7 +17,8 @@ function updateScrollState() {
 
 function setActiveNavigation(entries) {
     entries.forEach((entry) => {
-        const navigationLink = document.querySelector(`a[href="#${entry.target.id}"]`);
+        const route = routeBySectionId[entry.target.id];
+        const navigationLink = document.querySelector(`a[href="https://irisli1.github.io/${route}"]`);
         if (navigationLink) {
             navigationLink.parentElement.classList.toggle('active', entry.isIntersecting);
         }
